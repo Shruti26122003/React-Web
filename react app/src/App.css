@@ -1,107 +1,116 @@
-/* app.css */
-
-/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
 
 :root {
-    --color-primary: #6c63ff;  /* Vibrant purple color */
+    --color-primary: #6c63ff;
     --text-color: black;
-    --color-bg: rgb(236, 236, 236);  /* Light gray background */
-    --color-card: white;  /* White for cards */
-    --color-soft: #aaaaaa;  /* Soft gray for text */
+    --color-bg: rgb(236, 236, 236);
+    --color-card: white;
+    --color-soft: #aaaaaa;
     --color-border: lightgrey;
-    --color-red: red;  /* Red color for errors or alerts */
+    --color-red: red;
+}
+.darkmode{
+    --text-color: white;
+    --color-bg: black;
+    --color-card: #111111;
+}
+body{
+    overflow-x: hidden;
 }
 
-/* Body styles */
-body {
-    background-color: var(--color-bg); /* Set a light gray background */
-    color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-}
-
-/* Container */
 .container {
-    max-width: 991px; /* Maximum width of the container */
-    width: 100%; /* Full width */
-    margin: 0 auto; /* Center the container */
+    max-width: 991px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-/* Headings */
 h1, h2, h3, h4, h5 {
-    font-weight: 600; /* Bold weight */
+    font-weight: 600;
     color: var(--text-color);
 }
 
-/* Images */
 img {
-    width: 100%; /* Full width */
-    display: block; /* Block display */
-    object-fit: cover; /* Cover the container */
+    width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
-/* User styles */
 .user {
-    display: flex; /* Flexbox for user info */
-    align-items: center; /* Align items center */
-    gap: 10px; /* Space between items */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .user img {
-    width: 33px; /* Fixed size for user image */
-    aspect-ratio: 1/1; /* Maintain a square aspect ratio */
-    border-radius: 50%; /* Circular image */
+    width: 33px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
 
 .user h4 {
-    color: var(--color-primary); /* Primary color for user text */
+    color: var(--color-primary);
 }
 
-/* Text and body styles */
 body {
-    background: var(--color-bg); /* Background color */
-    color: var(--color-soft); /* Text color */
+    background: var(--color-bg);
+    color: var(--color-soft);
 }
 
-/* Small and paragraph text */
 small, p {
-    color: var(--color-soft); /* Soft color for less emphasis */
+    color: var(--color-soft);
 }
 
-/* Button styles */
 .btn {
-    padding: 1rem 2rem; /* Padding for buttons */
-    display: inline-block; /* Inline block for buttons */
-    width: fit-content; /* Button width based on content */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 5rem; /* Rounded button */
-    font-size: 1rem; /* Font size for buttons */
-    font-weight: 500; /* Font weight */
-    border: none; /* No border */
-    transition: 0.3s ease; /* Transition effect */
+    padding: 0.6rem 1.6rem; /* Fixed padding */
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5rem;
+    font-size: 0.9rem; /* Adjusted font size */
+    font-weight: 500;
+    border: none;
+    transition: 0.3s ease;
 }
 
-/* Button hover effect */
 .btn:hover {
-    opacity: 0.7; /* Reduce opacity on hover */
+    opacity: 0.7;
 }
 
-/* Primary button styles */
 .btn-primary {
-    background: var(--color-primary); /* Primary color */
-    color: white; /* White text */
+    background: var(--color-primary);
+    color: white;
 }
 
-/* Red button styles */
 .btn-red {
-    background: var(--color-red); /* Red color */
-    color: white; /* White text */
+    background: var(--color-red);
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 20% 54% 23%; /* This looks fine but you can adjust the width percentage as per your design */
+    gap: 3%;
+    width: 100%;
+}
+
+
+nav {
+    height: 3.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-primary);
+    position: sticky;
+    z-index: 10;
+    background: var(--color-card);
+    top: 0;
 }

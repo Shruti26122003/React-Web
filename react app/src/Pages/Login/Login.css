@@ -1,108 +1,76 @@
-/* General resets */
-.Login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Login{
+    background: var(--color-primary);
     height: 100vh;
-}
-
-.Login .card {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.Login .card{
+    display: flex;
     width: 580px;
     background: white;
-    border: none;
-    border-radius: 1.5rem; /* More rounded edges */
+    border: 1px solid white;
+    border-radius: 2rem;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
-
-.Login .left {
+.Login .card .left{
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 30px; /* More padding */
-    background: white;
+    gap: 10px;
+    padding: 20px;    
 }
 
-.Login h2 {
+.Login h2{
     color: var(--color-primary);
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
 }
 
-.Login .card p {
-    font-size: 1rem; /* Increase font size for better readability */
-    color: var(--text-color);
+.Login .card p{
+    font-size: .9rem;
 }
 
-.Login .card span {
+.Login .card span{
     color: var(--color-primary);
-    margin-top: 10px;
 }
 
-.Login .right {
+.Login .card .right{
     flex: 1;
-    padding: 30px;
-    background: var(--color-primary); /* Purple background */
-    border-radius: 0 1.5rem 1.5rem 0;
+    background-color: var(--color-primary);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.Login form {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    color: white;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.Login form input {
-    padding: 0.8rem;
+.Login form input{
+    padding: 1rem 0;
     width: 90%;
     background: transparent;
-    border: none;
+    border: transparent;
     outline: none;
-    border-bottom: 2px solid white; /* Thicker border */
+    border-bottom: 1px solid white;
+    margin: 0 auto;
     color: white;
-    font-size: 1.1rem; /* Bigger input text */
-    transition: border-color 0.3s ease;
 }
 
-.Login form input::placeholder {
-    color: rgba(255, 255, 255, 0.8);
+.Login form input::placeholder{
+    color: white;
+    font-size: 1rem;
     text-transform: capitalize;
 }
-
-.Login form input:focus {
-    border-color: white;
-}
-
-.Login form .btn {
-    width: 90%;
-    padding: 1rem; /* Increase padding */
-    border-radius: 3rem; /* More rounded button */
-    background-color: white;
+.Login form .btn{
     color: var(--color-primary);
-    font-weight: bold;
-    font-size: 1rem; /* Bigger button text */
-    cursor: pointer;
-    transition: 0.3s ease;
+    margin-top: 1rem;
 }
+@media (max-width:600px){
+    .Login .card{
+        width: 90%;
+        flex-direction: column;
+    }
 
-.Login form .btn:hover {
-    background-color: var(--color-primary);
-    color: white;
-    border: 1px solid white;
+    .Login .card .right{
+        padding-bottom: 20px;
+    }
 }
-
-/* Hover effects for buttons */
-.btn:hover {
-    opacity: 0.85;
-    transition: all 0.3s ease;
-}
-
