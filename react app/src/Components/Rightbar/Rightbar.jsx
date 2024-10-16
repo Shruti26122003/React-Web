@@ -7,8 +7,12 @@ export default function Rightbar() {
   return (
     <div className="rightBar">
       <div className="rightbar-container">
-        <Messages />
-        <Firend />
+        <div className="Message">
+          <Messages />
+        </div>
+        <div className="Friend-Request">
+          <Firend />
+        </div>
       </div>
     </div>
   );

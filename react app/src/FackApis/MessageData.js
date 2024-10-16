@@ -7,31 +7,31 @@ import MeessageImage5 from '../assets/img/MessageProfile6.jpg'
 const Messages = [
     {
         id: 1,
-        name: 'Ahammed Alli',
+        name: 'Albus ',
         img: MeessageImage1,
         mText: 'You are doing great! Keep up the awesome work!'
     },
     {
         id: 2,
-        name: 'Mark William',
+        name: 'Malfow ',
         img: MeessageImage2,
         mText: 'Today is full of new opportunities. Go after them!'
     },
     {
         id: 3,
-        name: 'Ranvir Sing',
+        name: 'Ron',
         img: MeessageImage3,
         mText: 'Believe in yourself, you are capable of amazing things!'
     },
     {
         id: 4,
-        name: 'Happy Rose',
+        name: 'Hermione',
         img: MeessageImage4,
         mText: 'Your positivity is contagious. Keep spreading the good vibes!'
     },
     {
         id: 5,
-        name: 'Angela Flower',
+        name: 'Ginni ',
         img: MeessageImage5,
         mText: 'Every step forward is progress. Keep moving forward!'
     },

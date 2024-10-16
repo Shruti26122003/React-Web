@@ -19,7 +19,7 @@ export default function Leftbar() {
           <Link to='/profile/id'>
           <div className="user">
             <img src={CurrentUser.map(user=>(user.ProfieImage))} alt="" />
-            <h4> Beg Joker </h4>
+            <h4> Harry </h4>
           </div>
           </Link>
 

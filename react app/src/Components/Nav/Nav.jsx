@@ -45,7 +45,7 @@ export default function Nav() {
 
           <div className="user">
             <img src={CurrentUser.map(user => user.ProfieImage)} alt="Profile" />
-            <h4>Beg Joker</h4>
+            <h4>Harry</h4>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function Messages() {
   return (
     <div className="Message">
       <div className="message-top">
-        <h4>Message</h4>
+        <h4>Messages</h4>
         <FontAwesomeIcon icon={faEdit} />
       </div>
       <div className="message-search">
@@ -18,7 +18,7 @@ export default function Messages() {
       </div>
       <div className="border-div">
         {MessageData.map((mess) => (
-          <Link to={`/chatbox/${mess.id}`} key={mess.id}> {/* Ensure unique keys and dynamic link */}
+          <Link to={`/chatbox/${mess.id}`} key={mess.id}>
             <div className="message">
               <div className="user">
                 <img src={mess.img} alt="" />
