@@ -1,21 +1,19 @@
 import Comment1 from '../assets/img/FeedProfile3.jpg';
 import Comment2 from '../assets/img/FeedProfile12.jpg';
 
-
-const Comments =[
+const Comments = [
     {
         id: 1, 
         name: 'Dodo Vincey',
         commentProfile: Comment1,
-        CommeText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        CommeText: 'Great job! Your post really brightened up my day. Keep it up!'
     },     
     {
         id: 2, 
         name: 'David Milar',
-        commentProfile:Comment2,
-        CommeText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, distinctio'
+        commentProfile: Comment2,
+        CommeText: 'I love the positivity in this post. You’re spreading good vibes!'
     }, 
-]
-
+];
 
 export default Comments;
