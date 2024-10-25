@@ -1,4 +1,3 @@
-import React from 'react';
 import './userprofile.css';
 import CurrentUserData from '../../FackApis/CurrentData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,7 +13,6 @@ export default function UserProfile() {
         <img src={user.CoverPhoto} alt="Cover" />
       </div>
 
-      
       <div className="profile-info">
         <img src={user.ProfieImage} alt="Profile" />
         
@@ -34,12 +32,11 @@ export default function UserProfile() {
             <FontAwesomeIcon icon={faFeed} /> Follow Me
           </button>
 
-          <button className='btn'>
+          <button className='btn btn-primary'>
             <FontAwesomeIcon icon={faLink} /> 
           </button>
         </div>
 
-        
         <p className='bio'>
           {user.bio || 'The only limit is your mind.'} 
         </p>
